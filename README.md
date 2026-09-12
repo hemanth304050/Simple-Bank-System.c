@@ -1,25 +1,23 @@
-# 🏦 Bank Management System
+🏦 Bank Management System
 
-> 💰 A simple **Bank Management System built in C** that allows users to manage deposits, withdrawals, money transfers, account details, and transaction history through a console-based interface.
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---|---|
-| 💵 **Deposit Money** | Add money to the account balance |
-| 💸 **Withdraw Money** | Withdraw money with insufficient-balance checking |
-| 🔄 **Transfer Money** | Transfer money to another account number |
-| 👤 **Account Details** | View account holder information and current balance |
-| 📜 **Transaction Details** | View transactions stored in the account file |
-| 🚪 **Exit** | Display final account details and safely exit |
+«💰 A simple Bank Management System built in C that allows users to manage deposits, withdrawals, money transfers, account details, and transaction history through a console-based interface.»
 
 ---
 
-## 🖥️ Menu
+✨ Features
 
-```text
+Feature| Description
+💵 Deposit Money| Add money to the account balance
+💸 Withdraw Money| Withdraw money with insufficient-balance checking
+🔄 Transfer Money| Transfer money to another account number
+👤 Account Details| View account holder information and current balance
+📜 Transaction Details| View transactions stored in the account file
+🚪 Exit| Display final account details and safely exit
+
+---
+
+🖥️ Menu
+
 --------------------------------------------------
                     MENU
 --------------------------------------------------
@@ -31,10 +29,9 @@
 6. Exit
 --------------------------------------------------
 
-
 ---
 
-## 🔧 Technologies Used
+🔧 Technologies Used
 
 💻 C Programming
 
@@ -52,18 +49,18 @@
 
 🖥️ Console Interface
 
+---
 
-## 📚 C Libraries Used
+📚 C Libraries Used
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
 #include <time.h>
 
-
 ---
 
-## 📂 Project Structure
+📂 Project Structure
 
 Bank-Management-System/
 │
@@ -71,14 +68,11 @@ Bank-Management-System/
 ├── 📄 Account.txt
 └── 📄 README.md
 
-> Account.txt is automatically created by the program to store account information and transaction records.
-
-
-
+«"Account.txt" is automatically created by the program to store account information and transaction records.»
 
 ---
 
-## ⚙️ How It Works
+⚙️ How It Works
 
 1️⃣ Create Account
 
@@ -87,8 +81,7 @@ When the program starts, the user enters:
 Enter your name :
 Enter your account no. :
 
-The information is stored in Account.txt.
-
+The information is stored in "Account.txt".
 
 ---
 
@@ -105,7 +98,6 @@ Enter the amount you want to deposit
 Now balance : 15000
 
 The transaction is also recorded with the date and time.
-
 
 ---
 
@@ -125,7 +117,6 @@ If the requested amount is greater than the balance:
 
 *Insufficient balance*
 
-
 ---
 
 4️⃣ 🔄 Transfer Money
@@ -140,8 +131,7 @@ Enter the amount you want to transfer
 *Money Transferred*
 Current balance : 10000
 
-The transfer is recorded in Account.txt.
-
+The transfer is recorded in "Account.txt".
 
 ---
 
@@ -158,14 +148,13 @@ Total balance = 10000
 
 3 transactions have been made from your account
 
-
 ---
 
 6️⃣ 📜 Transaction Details
 
 All stored account and transaction information can be viewed through the transaction details option.
 
-# Example:
+Example:
 
 TRANSACTION DETAILS
 --------------------------------------------------
@@ -182,10 +171,9 @@ Date/Time of transaction : ...
 Rs1000 had been transferred from your account to 987654
 Date/Time of transaction : ...
 
-
 ---
 
-## 📁 File Handling
+📁 File Handling
 
 This project uses a text file called:
 
@@ -205,8 +193,9 @@ The file is used to store:
 
 ⏰ Transaction date and time
 
+---
 
-## File Modes Used
+📄 File Modes Used
 
 fopen("Account.txt", "w");
 
@@ -220,10 +209,9 @@ fopen("Account.txt", "r");
 
 Reads transaction information from the file.
 
-
 ---
 
-## 🧩 Functions
+🧩 Functions
 
 The project is divided into multiple functions for better organization.
 
@@ -238,22 +226,19 @@ void divider();
 
 Function Responsibilities
 
-Function	Purpose
-
-menu()	Displays the main menu
-deposit_money()	Handles deposits
-withdraw_money()	Handles withdrawals
-transfer_money()	Handles transfers
-checkDetail()	Displays account details
-transaction_details()	Displays transaction history
-LastDetail()	Displays final account information
-divider()	Prints the separator line
-
-
+Function| Purpose
+"menu()"| Displays the main menu
+"deposit_money()"| Handles deposits
+"withdraw_money()"| Handles withdrawals
+"transfer_money()"| Handles transfers
+"checkDetail()"| Displays account details
+"transaction_details()"| Displays transaction history
+"LastDetail()"| Displays final account information
+"divider()"| Prints the separator line
 
 ---
 
-## 🚀 How to Run
+🚀 How to Run
 
 🪟 Windows
 
@@ -277,10 +262,9 @@ gcc main.c -o bank
 
 bank
 
-
 ---
 
-# 💻 Example
+💻 Example
 
 Enter your name :
 Hemanth
@@ -309,10 +293,9 @@ Enter the amount you want to deposit
 *Money Deposited*
 Now balance : 15000
 
-
 ---
 
-## 🧠 Concepts Demonstrated
+🧠 Concepts Demonstrated
 
 This project is useful for learning fundamental C programming concepts such as:
 
@@ -322,7 +305,7 @@ This project is useful for learning fundamental C programming concepts such as:
 
 🔧 Functions
 
-🔀 switch statements
+🔀 "switch" statements
 
 🔁 Loops
 
@@ -338,11 +321,9 @@ This project is useful for learning fundamental C programming concepts such as:
 
 🖥️ Console-based applications
 
-
-
 ---
 
-## ⚠️ Important Note
+⚠️ Important Note
 
 This is an educational project created to demonstrate C programming and basic banking operations.
 
@@ -350,10 +331,9 @@ It is not a real banking application and should not be used for handling real fi
 
 The current version stores account information in a plain text file and does not include authentication, encryption, database security, or real banking connectivity.
 
-
 ---
 
-## 🔮 Future Improvements
+🔮 Future Improvements
 
 Some features that could be added in future versions:
 
@@ -385,11 +365,9 @@ Some features that could be added in future versions:
 
 📱 Mobile application
 
-
-
 ---
 
-## 🎯 Learning Objective
+🎯 Learning Objective
 
 The main objective of this project is to understand how a real-world banking workflow can be represented using basic C programming concepts.
 
@@ -405,72 +383,59 @@ It combines:
       ↓
 📜 Transaction History
 
-
 ---
 
-## ⭐ Project Highlights
+⭐ Project Highlights
 
 ✨ Beginner-friendly C project
-💰 Basic banking operations
-📂 File-based transaction storage
-⏰ Automatic transaction timestamps
-🧩 Function-based program structure
-🖥️ Simple console interface
-📚 Great for C programming practice
 
+💰 Basic banking operations
+
+📂 File-based transaction storage
+
+⏰ Automatic transaction timestamps
+
+🧩 Function-based program structure
+
+🖥️ Simple console interface
+
+📚 Great for C programming practice
 
 ---
 
-## 🤝 Contributing
+🤝 Contributing
 
 Contributions are welcome! 🎉
 
 If you would like to improve this project:
 
 1. 🍴 Fork the repository
-
-
 2. 📥 Clone the repository
-
-
 3. 🌱 Create a new branch
-
-
 4. 🛠️ Make your changes
-
-
 5. 💾 Commit your changes
-
-
 6. 🚀 Push the branch
-
-
 7. 🔀 Create a Pull Request
-
-
-
 
 ---
 
-## 📜 License
+📜 License
 
 This project is intended for educational purposes.
 
 Feel free to use, modify, and improve the code for learning and academic projects.
 
-
 ---
 
-## 👨‍💻 Author
+👨‍💻 Author
 
 Dhannodi Hemanth Kumar
 
 ⭐ If you found this project useful, consider giving the repository a Star!
 
-
 ---
 
-## 🏦 Simple Banking. Built with C. 💻
+🏦 Simple Banking. Built with C. 💻
 
 ╔══════════════════════════════════════════════╗
 ║        🏦 BANK MANAGEMENT SYSTEM 🏦          ║
