@@ -34,7 +34,7 @@
 
 ---
 
-🔧 Technologies Used
+## 🔧 Technologies Used
 
 💻 C Programming
 
@@ -53,7 +53,7 @@
 🖥️ Console Interface
 
 
-📚 C Libraries Used
+## 📚 C Libraries Used
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,7 +63,7 @@
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
 Bank-Management-System/
 │
@@ -78,7 +78,7 @@ Bank-Management-System/
 
 ---
 
-⚙️ How It Works
+## ⚙️ How It Works
 
 1️⃣ Create Account
 
@@ -165,7 +165,7 @@ Total balance = 10000
 
 All stored account and transaction information can be viewed through the transaction details option.
 
-Example:
+# Example:
 
 TRANSACTION DETAILS
 --------------------------------------------------
@@ -185,7 +185,7 @@ Date/Time of transaction : ...
 
 ---
 
-📁 File Handling
+## 📁 File Handling
 
 This project uses a text file called:
 
@@ -206,7 +206,7 @@ The file is used to store:
 ⏰ Transaction date and time
 
 
-File Modes Used
+## File Modes Used
 
 fopen("Account.txt", "w");
 
@@ -223,7 +223,7 @@ Reads transaction information from the file.
 
 ---
 
-🧩 Functions
+## 🧩 Functions
 
 The project is divided into multiple functions for better organization.
 
@@ -253,7 +253,7 @@ divider()	Prints the separator line
 
 ---
 
-🚀 How to Run
+## 🚀 How to Run
 
 🪟 Windows
 
@@ -280,7 +280,7 @@ bank
 
 ---
 
-💻 Example
+# 💻 Example
 
 Enter your name :
 Hemanth
@@ -312,7 +312,7 @@ Now balance : 15000
 
 ---
 
-🧠 Concepts Demonstrated
+## 🧠 Concepts Demonstrated
 
 This project is useful for learning fundamental C programming concepts such as:
 
@@ -342,7 +342,7 @@ This project is useful for learning fundamental C programming concepts such as:
 
 ---
 
-⚠️ Important Note
+## ⚠️ Important Note
 
 This is an educational project created to demonstrate C programming and basic banking operations.
 
@@ -353,7 +353,7 @@ The current version stores account information in a plain text file and does not
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Some features that could be added in future versions:
 
@@ -389,7 +389,7 @@ Some features that could be added in future versions:
 
 ---
 
-🎯 Learning Objective
+## 🎯 Learning Objective
 
 The main objective of this project is to understand how a real-world banking workflow can be represented using basic C programming concepts.
 
@@ -408,7 +408,7 @@ It combines:
 
 ---
 
-⭐ Project Highlights
+## ⭐ Project Highlights
 
 ✨ Beginner-friendly C project
 💰 Basic banking operations
@@ -421,7 +421,7 @@ It combines:
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! 🎉
 
@@ -452,7 +452,7 @@ If you would like to improve this project:
 
 ---
 
-📜 License
+## 📜 License
 
 This project is intended for educational purposes.
 
@@ -461,16 +461,16 @@ Feel free to use, modify, and improve the code for learning and academic project
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Hemanth
+Dhannodi Hemanth Kumar
 
 ⭐ If you found this project useful, consider giving the repository a Star!
 
 
 ---
 
-🏦 Simple Banking. Built with C. 💻
+## 🏦 Simple Banking. Built with C. 💻
 
 ╔══════════════════════════════════════════════╗
 ║        🏦 BANK MANAGEMENT SYSTEM 🏦          ║
