@@ -406,7 +406,15 @@ This project is useful for learning how to:
 
 ## 📸 Project Type
 
-🏦 Bank Management System · 💻 Console Application · 📝 C Programming Project · 📁 File-Based Storage · 🎓 Educational Project
+🏦 Bank Management System 
+
+💻 Console Application 
+
+📝 C Programming Project 
+
+📁 File-Based Storage 
+
+🎓 Educational Project
 
 ---
 
