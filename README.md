@@ -56,6 +56,9 @@ All transaction details are stored in an `Account.txt` file.
 
 ---
 
+
+
+
 ## 🔄 How the System Works
 
 1️⃣ Create Account
