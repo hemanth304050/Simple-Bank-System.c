@@ -8,11 +8,11 @@
 
 Feature | Description
 # 💵 Deposit Money| Add money to the account balance
-#💸 Withdraw Money| Withdraw money with insufficient-balance checking
-#🔄 Transfer Money| Transfer money to another account number
-#👤 Account Details| View account holder information and current balance
-#📜 Transaction Details| View transactions stored in the account file
-#🚪 Exit| Display final account details and safely exit
+# 💸 Withdraw Money| Withdraw money with insufficient-balance checking
+# 🔄 Transfer Money| Transfer money to another account number
+# 👤 Account Details| View account holder information and current balance
+# 📜 Transaction Details| View transactions stored in the account file
+# 🚪 Exit| Display final account details and safely exit
 
 ---
 
@@ -227,14 +227,14 @@ void divider();
 Function Responsibilities
 
 Function| Purpose
-#"menu()"| Displays the main menu
-#"deposit_money()"| Handles deposits
-#"withdraw_money()"| Handles withdrawals
-#"transfer_money()"| Handles transfers
-#"checkDetail()"| Displays account details
-#"transaction_details()"| Displays transaction history
-#"LastDetail()"| Displays final account information
-#"divider()"| Prints the separator line
+# "menu()"| Displays the main menu
+# "deposit_money()"| Handles deposits
+# "withdraw_money()"| Handles withdrawals
+# "transfer_money()"| Handles transfers
+# "checkDetail()"| Displays account details
+# "transaction_details()"| Displays transaction history
+# "LastDetail()"| Displays final account information
+# "divider()"| Prints the separator line
 
 ---
 
