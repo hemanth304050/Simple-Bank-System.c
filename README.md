@@ -56,7 +56,7 @@ All transaction details are stored in an `Account.txt` file.
 
 ---
 
-🔄 How the System Works
+## 🔄 How the System Works
 
 1️⃣ Create Account
 
@@ -179,7 +179,7 @@ Date/Time of transaction : ...
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
 📦 Bank-Management-System
  ┣ 📜 Bank_Management_System.c
@@ -189,7 +189,7 @@ Date/Time of transaction : ...
 
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 💻 Programming Language
 
@@ -198,7 +198,7 @@ Date/Time of transaction : ...
 
 📚 C Libraries Used
 
-Library	Purpose
+## Library	Purpose
 
 stdio.h	Input/output operations such as printf(), scanf(), fopen(), fprintf()
 stdlib.h	Functions such as exit() and system()
@@ -209,9 +209,9 @@ time.h	Date and time functions such as time() and ctime()
 
 ---
 
-🧩 C Concepts Used
+## 🧩 C Concepts Used
 
-🎯 Functions
+## 🎯 Functions
 
 The project is divided into multiple functions for better organization:
 
@@ -227,7 +227,7 @@ divider();
 
 ---
 
-📁 File Handling
+## 📁 File Handling
 
 The program uses file handling to store account and transaction information.
 
@@ -242,7 +242,7 @@ Different file modes are used:
 
 ---
 
-⏰ Date & Time
+## ⏰ Date & Time
 
 Transaction date and time are recorded using:
 
@@ -253,7 +253,7 @@ ctime(&tm);
 
 ---
 
-🔢 Global Variables
+## 🔢 Global Variables
 
 The program uses global variables to maintain account information and transaction data.
 
@@ -269,7 +269,7 @@ int with_amt;
 
 ---
 
-💾 File Storage
+## 💾 File Storage
 
 The program creates a file named:
 
@@ -304,7 +304,7 @@ Date/Time of transaction : ...
 
 ---
 
-⚙️ Requirements
+## ⚙️ Requirements
 
 To run this project, you need:
 
@@ -315,7 +315,7 @@ To run this project, you need:
 📝 C-compatible IDE or compiler
 
 
-Recommended IDEs
+## Recommended IDEs
 
 🟦 Code::Blocks
 
@@ -333,7 +333,7 @@ Recommended IDEs
 
 ---
 
-🚀 How to Run
+## 🚀 How to Run
 
 Step 1️⃣ Clone the Repository
 
@@ -413,7 +413,7 @@ Current balance : 10000
 
 ---
 
-🧠 Learning Objectives
+## 🧠 Learning Objectives
 
 This project is useful for learning how to:
 
@@ -439,7 +439,7 @@ This project is useful for learning how to:
 
 ---
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 This project can be upgraded with more advanced banking features:
 
@@ -477,7 +477,7 @@ This project can be upgraded with more advanced banking features:
 
 ---
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 > 🚨 This is an educational C programming project created for learning purposes. It is not a real banking application and should not be used for handling real financial information or transactions.
 
@@ -486,7 +486,7 @@ This project can be upgraded with more advanced banking features:
 
 ---
 
-📸 Project Type
+## 📸 Project Type
 
 🏦 Bank Management System
 💻 Console Application
@@ -497,7 +497,7 @@ This project can be upgraded with more advanced banking features:
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Hemanth
 
@@ -521,7 +521,7 @@ If you found this project useful:
 
 ---
 
-📜 License
+## 📜 License
 
 This project is intended for educational and learning purposes.
 
