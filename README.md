@@ -1,540 +1,121 @@
 # 🏦 Bank Management System
 
-> 💳 A simple **Console-Based Bank Management System** developed in **C programming** to perform basic banking operations such as depositing money, withdrawing money, transferring money, checking account details, and viewing transaction history.
-
----
-
-## 📌 Project Overview
-
-The **Bank Management System** is a beginner-friendly C programming project that simulates basic banking operations through a command-line interface.
-
-The project demonstrates important C programming concepts such as:
-
-- 🧮 Variables and data types
-- 🌍 Global variables
-- 🔀 Conditional statements
-- 🔁 Loops
-- 🎯 Functions
-- 📁 File handling
-- ⏰ Date and time functions
-- 🖥️ Console-based menus
-- 🔐 Basic account information handling
-
-All transaction details are stored in an `Account.txt` file.
+A simple **console-based Bank Management System** built in C, allowing users to perform basic banking operations such as deposits, withdrawals, transfers, and transaction tracking — all through an interactive menu.
 
 ---
 
 ## ✨ Features
 
-| Feature | Description |
-|--------|-------------|
-| 💰 Deposit Money | Add money to the account balance |
-| 💸 Withdraw Money | Withdraw money from the account |
-| 🔄 Transfer Money | Transfer money to another account number |
-| 👤 Account Details | Display account holder information and balance |
-| 📜 Transaction Details | View transaction history stored in the file |
-| 🚪 Exit | Display final account details and exit the program |
-| ⏰ Transaction Time | Records the date and time of transactions |
-| 📁 File Storage | Saves account and transaction information in `Account.txt` |
+- 💰 **Deposit Money** — Add funds to your account
+- 💸 **Withdraw Money** — Withdraw funds with balance validation
+- 🔄 **Transfer Money** — Transfer funds to another account number
+- 📋 **Account Details** — View name, account number, and current balance
+- 🧾 **Transaction History** — View all past transactions with timestamps
+- 🚪 **Exit** — Safely exit and view final account summary
 
 ---
 
-## 🖥️ Menu
-
-```text
---------------------------------------------------
-                    MENU
---------------------------------------------------
-1. Deposit Money
-2. Withdraw Money
-3. Transfer Money
-4. Account details
-5. Transaction details
-6. Exit
---------------------------------------------------
-
-
----
-
-
-
-
-## 🔄 How the System Works
-
-1️⃣ Create Account
-
-When the program starts, the user enters:
-
-👤 Name
-
-🔢 Account Number
-
-
-The information is saved in:
-
-Account.txt
-
-
----
-
-2️⃣ 💰 Deposit Money
-
-The user enters the amount they want to deposit.
-
-Enter the amount you want to deposit
-5000
-
-*Money Deposited*
-Now balance : 15000
-
-The deposited amount and transaction time are stored in the account file.
-
-
----
-
-3️⃣ 💸 Withdraw Money
-
-The user enters the withdrawal amount.
-
-The system checks whether the account has sufficient balance.
-
-Enter the amount you want to withdraw
-2000
-
-Money withdrawn
-Current balance : 13000
-
-If the balance is insufficient:
-
-*Insufficient balance*
-
-
----
-
-4️⃣ 🔄 Transfer Money
-
-The user enters:
-
-🏦 Receiver's account number
-
-💰 Transfer amount
-
-
-Example:
-
-Enter the account no. in which you want to transfer the money : 123456
-
-Enter the amount you want to transfer
-3000
-
-*Money Transferred*
-Current balance : 10000
-
-The transaction is recorded in Account.txt.
-
-
----
-
-5️⃣ 👤 Account Details
-
-Displays:
-
-Name
-
-Account number
-
-Current balance
-
-Number of transactions
-
-
-Example:
-
-ACCOUNT DETAILS
---------------------------------------------------
-Name : Hemanth
-Account No. : 123456
-Total balance = 10000
-
-3 transactions have been made from your account
-
-
----
-
-6️⃣ 📜 Transaction Details
-
-The program reads Account.txt and displays the stored transaction history.
-
-Example:
-
-TRANSACTION DETAILS
---------------------------------------------------
-
-Rs5000 had been deposited to your account
-Date/Time of transaction : ...
-
-Rs2000 had been withdrawn from your account
-Date/Time of transaction : ...
-
-Rs3000 had been transferred from your account to 123456
-Date/Time of transaction : ...
-
+## 🖥️ Tech Stack
+
+| Component | Details |
+|-----------|---------|
+| Language  | C |
+| Libraries | `stdio.h`, `stdlib.h`, `conio.h`, `time.h` |
+| Storage   | Flat file (`Account.txt`) |
+| Platform  | Windows (uses `conio.h` & `system("cls")`) |
 
 ---
 
 ## 📂 Project Structure
 
-📦 Bank-Management-System
- ┣ 📜 Bank_Management_System.c
- ┣ 📄 Account.txt
- ┗ 📜 README.md
+```
 
-
----
-
-## 🛠️ Technologies Used
-
-💻 Programming Language
-
-🇨 C Programming
-
-
-📚 C Libraries Used
-
-## Library	Purpose
-
-stdio.h	Input/output operations such as printf(), scanf(), fopen(), fprintf()
-stdlib.h	Functions such as exit() and system()
-conio.h	Console functions such as getch()
-time.h	Date and time functions such as time() and ctime()
-
-
+Bank-Management-System/
+│
+├── bank.c          # Main source code
+├── Account.txt     # Auto-generated file storing account & transaction data
+└── README.md        # Project documentation
+```
 
 ---
 
-## 🧩 C Concepts Used
+## ⚙️ How It Works
 
-## 🎯 Functions
+1. On startup, the program asks for your **name** and **account number**.
+2. These details are saved to `Account.txt`.
+3. A menu is displayed with 6 options:
 
-The project is divided into multiple functions for better organization:
-
-deposit_money();
-withdraw_money();
-transfer_money();
-checkDetail();
-LastDetail();
-transaction_details();
-menu();
-divider();
-
-
----
-
-## 📁 File Handling
-
-The program uses file handling to store account and transaction information.
-
-FILE *ptr;
-
-Different file modes are used:
-
-"w"  // Write
-"a"  // Append
-"r"  // Read
-
-
----
-
-## ⏰ Date & Time
-
-Transaction date and time are recorded using:
-
-time_t tm;
-time(&tm);
-ctime(&tm);
-
-
----
-
-## 🔢 Global Variables
-
-The program uses global variables to maintain account information and transaction data.
-
-char name[20];
-int dip_amt;
-int amt = 10000;
-int acc_no;
-int ac;
-int count = 0;
-int trans_amt;
-int with_amt;
-
-
----
-
-## 💾 File Storage
-
-The program creates a file named:
-
-Account.txt
-
-The file contains:
-
-👤 Account holder name
-
-🔢 Account number
-
-💰 Deposit records
-
-💸 Withdrawal records
-
-🔄 Transfer records
-
-⏰ Transaction date and time
-
-
-Example:
-
-Name : Hemanth
-Account no. : 123456
-
-Rs5000 had been deposited to your account
-Date/Time of transaction : ...
-
-Rs2000 had been withdrawn from your account
-Date/Time of transaction : ...
-
-
----
-
-## ⚙️ Requirements
-
-To run this project, you need:
-
-💻 A C compiler
-
-🖥️ Windows environment recommended
-
-📝 C-compatible IDE or compiler
-
-
-## Recommended IDEs
-
-🟦 Code::Blocks
-
-🟩 Dev-C++
-
-🟪 Visual Studio / Visual Studio Code with C compiler
-
-🟨 Turbo C (for legacy conio.h support)
-
-
-> ⚠️ Note: This project uses conio.h, getch(), and system("cls"), which are primarily associated with Windows/DOS environments. Some modern compilers may require modifications.
-
-
-
-
----
-
-## 🚀 How to Run
-
-Step 1️⃣ Clone the Repository
-
-git clone https://github.com/your-username/Bank-Management-System.git
-
-Step 2️⃣ Open the Project
-
-Open the .c file using your preferred C IDE or editor.
-
-Step 3️⃣ Compile the Program
-
-Example:
-
-gcc Bank_Management_System.c -o bank
-
-Step 4️⃣ Run
-
-bank
-
-On Windows:
-
-bank.exe
-
-
----
-
-🧪 Example Workflow
-
-🏦 BANK MANAGEMENT SYSTEM
-
-Enter your name :
-Hemanth
-
-Enter your account no. :
-123456
-
+```
 --------------------------------------------------
                     MENU
 --------------------------------------------------
-
 1. Deposit Money
 2. Withdraw Money
 3. Transfer Money
-4. Account details
-5. Transaction details
+4. Account Details
+5. Transaction Details
 6. Exit
+--------------------------------------------------
+```
 
-Enter your choice :
-
-💰 Deposit
-
-Enter the amount you want to deposit
-5000
-
-*Money Deposited*
-Now balance : 15000
-
-💸 Withdraw
-
-Enter the amount you want to withdraw
-2000
-
-Money withdrawn
-Current balance : 13000
-
-🔄 Transfer
-
-Enter the account no. in which you want to transfer the money :
-987654
-
-Enter the amount you want to transfer
-3000
-
-*Money Transferred*
-Current balance : 10000
-
+4. Every deposit, withdrawal, and transfer is logged with a **date & time stamp** into `Account.txt`.
+5. Choosing **Exit** displays your final account summary before closing.
 
 ---
 
-## 🧠 Learning Objectives
+## 🚀 Getting Started
 
-This project is useful for learning how to:
+### Prerequisites
+- A Windows machine (due to `conio.h` and `cls`)
+- A C compiler (e.g., **MinGW / GCC**, Turbo C, or Code::Blocks)
 
-✅ Create functions in C
+### 🔧 Compile & Run
 
-✅ Use global variables
+```bash
+gcc bank.c -o bank
+./bank
+```
 
-✅ Work with files
-
-✅ Read and write data
-
-✅ Use loops and conditions
-
-✅ Handle user input
-
-✅ Create menu-driven programs
-
-✅ Record date and time
-
-✅ Build a simple real-world application using C
-
-
+> 💡 If using an older compiler like Turbo C, you can compile and run directly within the IDE.
 
 ---
 
-## 🔮 Future Improvements
+## 🧮 Default Balance
 
-This project can be upgraded with more advanced banking features:
+The system starts every account with a default balance of:
 
-🔐 PIN/password authentication
-
-👥 Multiple user accounts
-
-💾 Permanent account balance storage
-
-🏦 Separate sender and receiver accounts
-
-💳 ATM simulation
-
-📱 Better user interface
-
-🧾 Printable transaction statements
-
-🔎 Search account functionality
-
-🗑️ Delete account functionality
-
-✏️ Update account information
-
-💵 Balance validation
-
-🚫 Prevention of negative deposits/withdrawals
-
-🔒 Improved security
-
-🗄️ Database integration
-
-🌐 Online banking functionality
-
-
+```
+₹10,000
+```
 
 ---
 
-## ⚠️ Disclaimer
+## ⚠️ Known Limitations
 
-> 🚨 This is an educational C programming project created for learning purposes. It is not a real banking application and should not be used for handling real financial information or transactions.
-
-
-
-
----
-
-## 📸 Project Type
-
-🏦 Bank Management System
-💻 Console Application
-📝 C Programming Project
-📁 File-Based Storage
-🎓 Educational Project
-
+- Uses `gets()`, which is **deprecated and unsafe** — consider replacing with `fgets()`.
+- Windows-only due to `conio.h` and `system("cls")`.
+- No password/authentication layer — single-user session only.
+- Balance and count reset every time the program restarts (not persisted, only transaction logs are).
 
 ---
 
-## 👨‍💻 Author
+## 🌱 Future Improvements
 
-Hemanth
-
-💻 C Programming | 🚀 Software Development | 📚 Learning & Building
-
-
----
-
-⭐ Support
-
-If you found this project useful:
-
-⭐ Star this repository
-
-🍴 Fork the repository
-
-🐛 Report issues
-
-💡 Suggest improvements
-
+- [ ] Add multi-user/account support with login system
+- [ ] Persist balance across sessions (not just logs)
+- [ ] Replace unsafe `gets()` with `fgets()`
+- [ ] Make cross-platform (remove `conio.h`, `system("cls")`)
+- [ ] Add input validation for negative/invalid amounts
 
 ---
 
-## 📜 License
+## 👤 Author
 
-This project is intended for educational and learning purposes.
-
+**Hemanth**
+🔗 [Portfolio](https://dhkmyportfolio.netlify.app)
 
 ---
 
-<div align="center">🏦 Bank Management System
+## 📄 License
 
-Built with ❤️ using C
-
-⭐ Star the repository if you like it!
-
-</div>
+This project is open-source and available for learning purposes.
